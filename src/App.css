@@ -1,0 +1,280 @@
+
+/* GENERAL */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #111827;
+  color: #f8fafc;
+  font-family: Inter, Arial, sans-serif;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* MAIN APP */
+.App {
+  width: 90%;
+  max-width: 1400px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 24px;
+  background: #f8fafc;
+}
+
+nav a {
+  color: #1e293b;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+
+/* HEADINGS */
+h1 {
+  margin: 35px 0 8px;
+  font-size: clamp(40px, 5vw, 58px);
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+h2 {
+  margin: 18px 0;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/* BOOKSTORE PAGE */
+.bookstore-page {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.bookstore-page h1 {
+  color: #f8fafc;
+}
+
+.bookstore-page h2 {
+  color: #cbd5e1;
+}
+
+/* ADD BOOK CARD */
+.book-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 28px;
+  margin: 25px auto 45px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.book-form .MuiFormControl-root {
+  flex: 1 1 150px;
+  min-width: 130px;
+}
+
+/* BOOK FORM INPUTS */
+.bookstore-page .MuiInputBase-root {
+  background: #0f172a !important;
+  color: #f8fafc !important;
+  border-radius: 8px;
+}
+
+.bookstore-page .MuiInputBase-input {
+  color: #f8fafc !important;
+  -webkit-text-fill-color: #f8fafc !important;
+}
+
+.bookstore-page .MuiInputLabel-root {
+  color: #94a3b8 !important;
+}
+
+.bookstore-page .MuiInputLabel-root.Mui-focused {
+  color: #60a5fa !important;
+}
+
+.bookstore-page .MuiOutlinedInput-notchedOutline {
+  border-color: #475569 !important;
+}
+
+.bookstore-page .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #60a5fa !important;
+}
+
+.bookstore-page .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #3b82f6 !important;
+}
+
+/* BUTTONS */
+.bookstore-page .MuiButton-contained {
+  min-height: 42px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  background: #2563eb;
+  font-weight: 700;
+  box-shadow: none;
+}
+
+.bookstore-page .MuiButton-contained:hover {
+  background: #1d4ed8;
+  box-shadow: none;
+}
+
+.bookstore-page .MuiButton-outlined {
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+/* SEARCH AND SORT */
+.book-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px auto 28px;
+}
+
+.book-controls .MuiTextField-root {
+  min-width: 180px;
+}
+
+.book-controls .MuiInputBase-root {
+  background: #1e293b;
+  color: white;
+}
+
+.book-controls .MuiInputLabel-root {
+  color: #cbd5e1;
+}
+
+/* BOOK TABLE CARD */
+.book-grid {
+  width: 100%;
+  height: 520px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.book-grid .MuiDataGrid-root {
+  border: none;
+  color: #1e293b;
+  background: #fff;
+  text-align: left;
+}
+
+.book-grid .MuiDataGrid-columnHeaders {
+  background: #f1f5f9;
+  color: #0f172a;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.book-grid .MuiDataGrid-cell {
+  font-size: 14px;
+}
+
+.book-grid .MuiDataGrid-row:hover {
+  background: #eff6ff;
+}
+
+.book-grid .MuiDataGrid-footerContainer {
+  background: #f8fafc;
+}
+
+.book-grid .MuiDataGrid-columnSeparator {
+  color: #cbd5e1;
+}
+
+/* DELETE BUTTON */
+.book-grid .MuiButton-colorError {
+  font-weight: 700;
+}
+
+/* TODO LIST STYLES */
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 20px auto 30px;
+}
+
+.form input {
+  padding: 10px;
+  min-width: 150px;
+  background: #3a3a3a;
+  color: white;
+  border: 1px solid #777;
+}
+
+.form input::placeholder {
+  color: #ccc;
+}
+
+.grid {
+  width: 90%;
+  height: 400px;
+  margin: 25px auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 750px) {
+  .App {
+    width: 100%;
+  }
+
+  .bookstore-page {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .book-form {
+    padding: 18px;
+  }
+
+  .book-form .MuiFormControl-root {
+    flex: 1 1 100%;
+  }
+
+  .book-controls {
+    flex-direction: column;
+  }
+
+  .book-controls .MuiTextField-root {
+    width: 100%;
+  }
+
+  .book-grid {
+    height: 500px;
+  }
+}
